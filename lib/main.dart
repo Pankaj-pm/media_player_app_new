@@ -81,6 +81,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   void initState() {
+
+
+    // var list = ["path","asdfas"].map((e) => Audio(e)).toList();
     assetsAudioPlayer = AssetsAudioPlayer.newPlayer();
     assetsAudioPlayer.open(Playlist(audios: al), autoStart: false);
     super.initState();
@@ -96,11 +99,11 @@ class _MyHomePageState extends State<MyHomePage> {
           IconButton(
               onPressed: () {
                 print("sdfsdfsdfsdf");
-                // Navigator.push(
-                //     context,
-                //     MaterialPageRoute(
-                //       builder: (context) => Videoplay(),
-                //     ));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Videoplay(),
+                    ));
               },
               icon: Icon(Icons.video_call))
         ],
